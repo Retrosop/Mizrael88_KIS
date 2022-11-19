@@ -13,5 +13,5 @@ public class Author
     public string? surname { get; set; }
     public string? name { get; set; }
     public string? patronymic { get; set; }
-    public List<Books> books { get; set; }
+    public ICollection<Books> Books { get; set; }
 }

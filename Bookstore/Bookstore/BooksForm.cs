@@ -19,15 +19,11 @@ namespace Bookstore
             InitializeComponent();
             using (var db = new DataContext())
             {
-                var dlist = db.Books.
-                    Include(d => d.sections_).
-                  //  Include(d => d.author_).
-                 //   Include(d => d.suppliers_).
-                  //  Include(d => d.publishers_).
-                    ToList();
+                var dlist = db.Books.ToList();
                 foreach (var s in dlist)
                 {
-                    dataGridView1.Rows.Add(s.idBooks, s.title, s.sections_.idSections,                        
+                    dataGridView1.Rows.Add(s.idBooks, s.title, 
+                        s.SectionsId, s.AuthorId, s.SuppliersId, s.PublishersId,
                             s.year, s.quantity, s.price);
                 }
             }

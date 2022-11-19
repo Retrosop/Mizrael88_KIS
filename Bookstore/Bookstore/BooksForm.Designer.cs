@@ -46,6 +46,9 @@
             this.idBooks = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.title = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.idSections = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.idAuthor = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.idSuppliers = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.idPublishers = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.year = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.quantity = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.price = new System.Windows.Forms.DataGridViewTextBoxColumn();
@@ -68,7 +71,7 @@
             // toolStripMenuItem1
             // 
             this.toolStripMenuItem1.Name = "toolStripMenuItem1";
-            this.toolStripMenuItem1.Size = new System.Drawing.Size(44, 20);
+            this.toolStripMenuItem1.Size = new System.Drawing.Size(45, 20);
             this.toolStripMenuItem1.Text = "Вход";
             // 
             // открытьToolStripMenuItem
@@ -176,6 +179,9 @@
             this.idBooks,
             this.title,
             this.idSections,
+            this.idAuthor,
+            this.idSuppliers,
+            this.idPublishers,
             this.year,
             this.quantity,
             this.price});
@@ -203,6 +209,21 @@
             this.idSections.HeaderText = "Раздел";
             this.idSections.Name = "idSections";
             this.idSections.ReadOnly = true;
+            // 
+            // idAuthor
+            // 
+            this.idAuthor.HeaderText = "Автор";
+            this.idAuthor.Name = "idAuthor";
+            // 
+            // idSuppliers
+            // 
+            this.idSuppliers.HeaderText = "Поставщик";
+            this.idSuppliers.Name = "idSuppliers";
+            // 
+            // idPublishers
+            // 
+            this.idPublishers.HeaderText = "Издатель";
+            this.idPublishers.Name = "idPublishers";
             // 
             // year
             // 
@@ -265,6 +286,9 @@
         private DataGridViewTextBoxColumn idBooks;
         private DataGridViewTextBoxColumn title;
         private DataGridViewTextBoxColumn idSections;
+        private DataGridViewTextBoxColumn idAuthor;
+        private DataGridViewTextBoxColumn idSuppliers;
+        private DataGridViewTextBoxColumn idPublishers;
         private DataGridViewTextBoxColumn year;
         private DataGridViewTextBoxColumn quantity;
         private DataGridViewTextBoxColumn price;

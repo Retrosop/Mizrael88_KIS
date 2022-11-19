@@ -11,5 +11,5 @@ public class Sections
     [Key]
     public int idSections { get; set; }
     public string? section { get; set; }
-    public List<Books> books { get; set; }
+    public List<Books> Books { get; set; }
 }

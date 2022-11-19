@@ -16,11 +16,24 @@ public class Books
     [Key]
     public int idBooks { get; set; }
     public string? title { get; set; }
-    public Sections sections_ { get; set; }
-    public Author author_ { get; set; }
-    public Suppliers suppliers_ { get; set; }
-    public Publishers publishers_ { get; set; }
+    [Required]
+    [Column("idSections")]
+    public int SectionsId { get; set; }
+    [Required]
+    [Column("idAuthor")]
+    public int AuthorId { get; set; }
+    [Required]
+    [Column("idSuppliers")]
+    public int SuppliersId { get; set; }
+    [Required]
+    [Column("idPublishers")]
+    public int PublishersId { get; set; }
     public int year { get; set; }
     public int quantity { get; set; }
     public int price { get; set; }
+
+    public Sections Sections { get; set; }
+    public Author Author { get; set; }
+    public Suppliers Suppliers { get; set; }
+    public Publishers Publishers { get; set; }
 }

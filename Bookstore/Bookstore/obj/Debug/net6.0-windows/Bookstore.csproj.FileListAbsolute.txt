@@ -80,3 +80,44 @@ C:\Мой Си\andrey\Bookstore\Bookstore\obj\Debug\net6.0-windows\refint\Bookst
 C:\Мой Си\andrey\Bookstore\Bookstore\obj\Debug\net6.0-windows\Bookstore.pdb
 C:\Мой Си\andrey\Bookstore\Bookstore\obj\Debug\net6.0-windows\Bookstore.genruntimeconfig.cache
 C:\Мой Си\andrey\Bookstore\Bookstore\obj\Debug\net6.0-windows\ref\Bookstore.dll
+C:\Users\User\Documents\GitHub\Mizrael88_KIS\Bookstore\Bookstore\obj\Debug\net6.0-windows\Bookstore.csproj.AssemblyReference.cache
+C:\Users\User\Documents\GitHub\Mizrael88_KIS\Bookstore\Bookstore\obj\Debug\net6.0-windows\Bookstore.AuthorForm.resources
+C:\Users\User\Documents\GitHub\Mizrael88_KIS\Bookstore\Bookstore\obj\Debug\net6.0-windows\Bookstore.BooksForm.resources
+C:\Users\User\Documents\GitHub\Mizrael88_KIS\Bookstore\Bookstore\obj\Debug\net6.0-windows\Bookstore.Form1.resources
+C:\Users\User\Documents\GitHub\Mizrael88_KIS\Bookstore\Bookstore\obj\Debug\net6.0-windows\Bookstore.Properties.Resources.resources
+C:\Users\User\Documents\GitHub\Mizrael88_KIS\Bookstore\Bookstore\obj\Debug\net6.0-windows\Bookstore.PublishersForm.resources
+C:\Users\User\Documents\GitHub\Mizrael88_KIS\Bookstore\Bookstore\obj\Debug\net6.0-windows\Bookstore.SectionsForm.resources
+C:\Users\User\Documents\GitHub\Mizrael88_KIS\Bookstore\Bookstore\obj\Debug\net6.0-windows\Bookstore.SuppliersForm.resources
+C:\Users\User\Documents\GitHub\Mizrael88_KIS\Bookstore\Bookstore\obj\Debug\net6.0-windows\Bookstore.СustomerForm.resources
+C:\Users\User\Documents\GitHub\Mizrael88_KIS\Bookstore\Bookstore\obj\Debug\net6.0-windows\Bookstore.csproj.GenerateResource.cache
+C:\Users\User\Documents\GitHub\Mizrael88_KIS\Bookstore\Bookstore\obj\Debug\net6.0-windows\Bookstore.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\User\Documents\GitHub\Mizrael88_KIS\Bookstore\Bookstore\obj\Debug\net6.0-windows\Bookstore.AssemblyInfoInputs.cache
+C:\Users\User\Documents\GitHub\Mizrael88_KIS\Bookstore\Bookstore\obj\Debug\net6.0-windows\Bookstore.AssemblyInfo.cs
+C:\Users\User\Documents\GitHub\Mizrael88_KIS\Bookstore\Bookstore\obj\Debug\net6.0-windows\Bookstore.csproj.CoreCompileInputs.cache
+C:\Users\User\Documents\GitHub\Mizrael88_KIS\Bookstore\Bookstore\obj\Debug\net6.0-windows\Bookstore.dll
+C:\Users\User\Documents\GitHub\Mizrael88_KIS\Bookstore\Bookstore\obj\Debug\net6.0-windows\refint\Bookstore.dll
+C:\Users\User\Documents\GitHub\Mizrael88_KIS\Bookstore\Bookstore\obj\Debug\net6.0-windows\Bookstore.pdb
+C:\Users\User\Documents\GitHub\Mizrael88_KIS\Bookstore\Bookstore\bin\Debug\net6.0-windows\Bookstore.exe
+C:\Users\User\Documents\GitHub\Mizrael88_KIS\Bookstore\Bookstore\bin\Debug\net6.0-windows\Bookstore.deps.json
+C:\Users\User\Documents\GitHub\Mizrael88_KIS\Bookstore\Bookstore\bin\Debug\net6.0-windows\Bookstore.runtimeconfig.json
+C:\Users\User\Documents\GitHub\Mizrael88_KIS\Bookstore\Bookstore\bin\Debug\net6.0-windows\Bookstore.dll
+C:\Users\User\Documents\GitHub\Mizrael88_KIS\Bookstore\Bookstore\bin\Debug\net6.0-windows\Bookstore.pdb
+C:\Users\User\Documents\GitHub\Mizrael88_KIS\Bookstore\Bookstore\bin\Debug\net6.0-windows\Humanizer.dll
+C:\Users\User\Documents\GitHub\Mizrael88_KIS\Bookstore\Bookstore\bin\Debug\net6.0-windows\Microsoft.EntityFrameworkCore.dll
+C:\Users\User\Documents\GitHub\Mizrael88_KIS\Bookstore\Bookstore\bin\Debug\net6.0-windows\Microsoft.EntityFrameworkCore.Abstractions.dll
+C:\Users\User\Documents\GitHub\Mizrael88_KIS\Bookstore\Bookstore\bin\Debug\net6.0-windows\Microsoft.EntityFrameworkCore.Design.dll
+C:\Users\User\Documents\GitHub\Mizrael88_KIS\Bookstore\Bookstore\bin\Debug\net6.0-windows\Microsoft.EntityFrameworkCore.Relational.dll
+C:\Users\User\Documents\GitHub\Mizrael88_KIS\Bookstore\Bookstore\bin\Debug\net6.0-windows\Microsoft.Extensions.Caching.Abstractions.dll
+C:\Users\User\Documents\GitHub\Mizrael88_KIS\Bookstore\Bookstore\bin\Debug\net6.0-windows\Microsoft.Extensions.Caching.Memory.dll
+C:\Users\User\Documents\GitHub\Mizrael88_KIS\Bookstore\Bookstore\bin\Debug\net6.0-windows\Microsoft.Extensions.Configuration.Abstractions.dll
+C:\Users\User\Documents\GitHub\Mizrael88_KIS\Bookstore\Bookstore\bin\Debug\net6.0-windows\Microsoft.Extensions.DependencyInjection.dll
+C:\Users\User\Documents\GitHub\Mizrael88_KIS\Bookstore\Bookstore\bin\Debug\net6.0-windows\Microsoft.Extensions.DependencyInjection.Abstractions.dll
+C:\Users\User\Documents\GitHub\Mizrael88_KIS\Bookstore\Bookstore\bin\Debug\net6.0-windows\Microsoft.Extensions.Logging.dll
+C:\Users\User\Documents\GitHub\Mizrael88_KIS\Bookstore\Bookstore\bin\Debug\net6.0-windows\Microsoft.Extensions.Logging.Abstractions.dll
+C:\Users\User\Documents\GitHub\Mizrael88_KIS\Bookstore\Bookstore\bin\Debug\net6.0-windows\Microsoft.Extensions.Options.dll
+C:\Users\User\Documents\GitHub\Mizrael88_KIS\Bookstore\Bookstore\bin\Debug\net6.0-windows\Microsoft.Extensions.Primitives.dll
+C:\Users\User\Documents\GitHub\Mizrael88_KIS\Bookstore\Bookstore\bin\Debug\net6.0-windows\MySqlConnector.dll
+C:\Users\User\Documents\GitHub\Mizrael88_KIS\Bookstore\Bookstore\bin\Debug\net6.0-windows\Pomelo.EntityFrameworkCore.MySql.dll
+C:\Users\User\Documents\GitHub\Mizrael88_KIS\Bookstore\Bookstore\obj\Debug\net6.0-windows\Bookstore.csproj.CopyComplete
+C:\Users\User\Documents\GitHub\Mizrael88_KIS\Bookstore\Bookstore\obj\Debug\net6.0-windows\Bookstore.genruntimeconfig.cache
+C:\Users\User\Documents\GitHub\Mizrael88_KIS\Bookstore\Bookstore\obj\Debug\net6.0-windows\ref\Bookstore.dll
