@@ -52,5 +52,11 @@ namespace Bookstore
             Form frm = new BooksForm();
             frm.Show();
         }
+
+        private void Á‡Í‡Á˚ToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            Form frm = new OrdersForm();
+            frm.Show();
+        }
     }
 }

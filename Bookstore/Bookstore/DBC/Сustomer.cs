@@ -13,4 +13,5 @@ public class Сustomer
     public string? fio { get; set; }
     public string? address { get; set; }
     public string? telephone { get; set; }
+    public ICollection<Orders> Orders { get; set; }
 }

@@ -121,3 +121,4 @@ C:\Users\User\Documents\GitHub\Mizrael88_KIS\Bookstore\Bookstore\bin\Debug\net6.
 C:\Users\User\Documents\GitHub\Mizrael88_KIS\Bookstore\Bookstore\obj\Debug\net6.0-windows\Bookstore.csproj.CopyComplete
 C:\Users\User\Documents\GitHub\Mizrael88_KIS\Bookstore\Bookstore\obj\Debug\net6.0-windows\Bookstore.genruntimeconfig.cache
 C:\Users\User\Documents\GitHub\Mizrael88_KIS\Bookstore\Bookstore\obj\Debug\net6.0-windows\ref\Bookstore.dll
+C:\Users\User\Documents\GitHub\Mizrael88_KIS\Bookstore\Bookstore\obj\Debug\net6.0-windows\Bookstore.OrdersForm.resources

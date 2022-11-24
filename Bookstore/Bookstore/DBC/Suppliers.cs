@@ -13,5 +13,5 @@ public class Suppliers
     public string? title { get; set; }
     public string? address { get; set; }
     public string? telephone { get; set; }
-    public List<Books> Books { get; set; }
+    public ICollection<Books> Books { get; set; }
 }

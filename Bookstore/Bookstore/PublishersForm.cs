@@ -28,21 +28,24 @@ public partial class PublishersForm : Form
 
     private void button1_Click(object sender, EventArgs e)
     {
-        int a = dataGridView1.CurrentRow.Index;
-        int v = int.Parse(dataGridView1.CurrentRow.Cells[0].Value.ToString());
-        dataGridView1.Rows.Remove(dataGridView1.Rows[a]);
-
         using (var db = new DataContext())
         {
-            var zapis = new Publishers
+            DialogResult result = MessageBox.Show("Вы действительно хотите удалить данную запись?", "Предупреждение!", MessageBoxButtons.YesNo);
+            if (result == DialogResult.Yes)
             {
-                idPublisher = v
-            };
+                int a = dataGridView1.CurrentRow.Index;
+                int v = int.Parse(dataGridView1.CurrentRow.Cells[0].Value.ToString());
+                dataGridView1.Rows.Remove(dataGridView1.Rows[a]);
+                var zapis = new Publishers
+                {
+                    idPublisher = v
+                };
 
-            db.Publishers.Attach(zapis);
-            db.Publishers.Remove(zapis);
+                db.Publishers.Attach(zapis);
+                db.Publishers.Remove(zapis);
 
-            db.SaveChanges();
+                db.SaveChanges();
+            }
         }
     }
 
@@ -50,25 +53,74 @@ public partial class PublishersForm : Form
     {
         using (var db = new DataContext())
         {
-            var Title = editTitle.Text;
-            var zapis = new Publishers()
+            if (editTitle.Text == "")
             {
-                title = Title
-            };
-            db.Add(zapis);
-            db.SaveChanges();
-            editTitle.Clear();
-            dataGridView1.Rows.Clear();
-            var dlist = db.Publishers.ToList();
-            foreach (var s in dlist)
+                MessageBox.Show("Заполнены не все поля!", "Ошибка!");
+            }
+            else
             {
-                dataGridView1.Rows.Add(s.idPublisher, s.title);
+                var Title = editTitle.Text;
+                var zapis = new Publishers()
+                {
+                    title = Title
+                };
+                db.Add(zapis);
+                db.SaveChanges();
+                editTitle.Clear();
+                dataGridView1.Rows.Clear();
+                var dlist = db.Publishers.ToList();
+                foreach (var s in dlist)
+                {
+                    dataGridView1.Rows.Add(s.idPublisher, s.title);
+                }
             }
         }
     }
 
     private void button3_Click(object sender, EventArgs e)
     {
+        this.Close();
+    }
+
+    private void разделToolStripMenuItem_Click(object sender, EventArgs e)
+    {
+        Form frm = new SectionsForm();
+        frm.Show();
+        this.Close();
+    }
+
+    private void авторыToolStripMenuItem_Click(object sender, EventArgs e)
+    {
+        Form frm = new AuthorForm();
+        frm.Show();
+        this.Close();
+    }
+
+    private void покупателиToolStripMenuItem_Click(object sender, EventArgs e)
+    {
+        Form frm = new СustomerForm();
+        frm.Show();
+        this.Close();
+    }
+
+    private void поставщикиToolStripMenuItem_Click(object sender, EventArgs e)
+    {
+        Form frm = new SuppliersForm();
+        frm.Show();
+        this.Close();
+    }
+
+    private void книгиToolStripMenuItem_Click(object sender, EventArgs e)
+    {
+        Form frm = new BooksForm();
+        frm.Show();
+        this.Close();
+    }
+
+    private void заказыToolStripMenuItem_Click(object sender, EventArgs e)
+    {
+        Form frm = new OrdersForm();
+        frm.Show();
         this.Close();
     }
 }

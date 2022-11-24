@@ -1,6 +1,6 @@
 ﻿namespace Bookstore
 {
-    partial class СustomerForm
+    partial class OrdersForm
     {
         /// <summary>
         /// Required designer variable.
@@ -28,39 +28,85 @@
         /// </summary>
         private void InitializeComponent()
         {
+            this.dataGridView1 = new System.Windows.Forms.DataGridView();
+            this.idOrders = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.idCustomer = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.idBooks = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.quantity = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.sum = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.button3 = new System.Windows.Forms.Button();
             this.button2 = new System.Windows.Forms.Button();
             this.panel1 = new System.Windows.Forms.Panel();
+            this.label8 = new System.Windows.Forms.Label();
+            this.editSum = new System.Windows.Forms.TextBox();
+            this.label7 = new System.Windows.Forms.Label();
+            this.editQuantity = new System.Windows.Forms.TextBox();
+            this.editBooksId = new System.Windows.Forms.ComboBox();
             this.label3 = new System.Windows.Forms.Label();
-            this.editTelephone = new System.Windows.Forms.TextBox();
+            this.editCustomerId = new System.Windows.Forms.ComboBox();
             this.label2 = new System.Windows.Forms.Label();
-            this.editAddress = new System.Windows.Forms.TextBox();
-            this.label1 = new System.Windows.Forms.Label();
-            this.editFIO = new System.Windows.Forms.TextBox();
             this.button1 = new System.Windows.Forms.Button();
-            this.dataGridView1 = new System.Windows.Forms.DataGridView();
-            this.idCustomer = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.fio = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.address = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.telephone = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.menuStrip1 = new System.Windows.Forms.MenuStrip();
             this.toolStripMenuItem1 = new System.Windows.Forms.ToolStripMenuItem();
             this.открытьToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.издателиToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.разделToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.авторыToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.покупателиToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.поставщикиToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.книгиToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.заказыToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.отчётыToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.panel1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
+            this.panel1.SuspendLayout();
             this.menuStrip1.SuspendLayout();
             this.SuspendLayout();
             // 
+            // dataGridView1
+            // 
+            this.dataGridView1.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            this.dataGridView1.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
+            this.idOrders,
+            this.idCustomer,
+            this.idBooks,
+            this.quantity,
+            this.sum});
+            this.dataGridView1.Location = new System.Drawing.Point(269, 65);
+            this.dataGridView1.Name = "dataGridView1";
+            this.dataGridView1.RowTemplate.Height = 25;
+            this.dataGridView1.Size = new System.Drawing.Size(849, 403);
+            this.dataGridView1.TabIndex = 15;
+            // 
+            // idOrders
+            // 
+            this.idOrders.HeaderText = "id";
+            this.idOrders.Name = "idOrders";
+            this.idOrders.ReadOnly = true;
+            this.idOrders.Visible = false;
+            // 
+            // idCustomer
+            // 
+            this.idCustomer.HeaderText = "Покупатель";
+            this.idCustomer.Name = "idCustomer";
+            // 
+            // idBooks
+            // 
+            this.idBooks.HeaderText = "Книга";
+            this.idBooks.Name = "idBooks";
+            // 
+            // quantity
+            // 
+            this.quantity.HeaderText = "Кол-во";
+            this.quantity.Name = "quantity";
+            this.quantity.ReadOnly = true;
+            // 
+            // sum
+            // 
+            this.sum.HeaderText = "Сумма";
+            this.sum.Name = "sum";
+            // 
             // button3
             // 
-            this.button3.Location = new System.Drawing.Point(262, 34);
+            this.button3.Location = new System.Drawing.Point(269, 30);
             this.button3.Name = "button3";
             this.button3.Size = new System.Drawing.Size(96, 29);
             this.button3.TabIndex = 14;
@@ -70,7 +116,7 @@
             // 
             // button2
             // 
-            this.button2.Location = new System.Drawing.Point(1016, 34);
+            this.button2.Location = new System.Drawing.Point(1022, 30);
             this.button2.Name = "button2";
             this.button2.Size = new System.Drawing.Size(96, 29);
             this.button2.TabIndex = 11;
@@ -81,113 +127,94 @@
             // panel1
             // 
             this.panel1.BackColor = System.Drawing.SystemColors.ActiveBorder;
+            this.panel1.Controls.Add(this.label8);
+            this.panel1.Controls.Add(this.editSum);
+            this.panel1.Controls.Add(this.label7);
+            this.panel1.Controls.Add(this.editQuantity);
+            this.panel1.Controls.Add(this.editBooksId);
             this.panel1.Controls.Add(this.label3);
-            this.panel1.Controls.Add(this.editTelephone);
+            this.panel1.Controls.Add(this.editCustomerId);
             this.panel1.Controls.Add(this.label2);
-            this.panel1.Controls.Add(this.editAddress);
-            this.panel1.Controls.Add(this.label1);
-            this.panel1.Controls.Add(this.editFIO);
-            this.panel1.Location = new System.Drawing.Point(0, 22);
+            this.panel1.Location = new System.Drawing.Point(7, 18);
             this.panel1.Name = "panel1";
             this.panel1.Size = new System.Drawing.Size(256, 450);
             this.panel1.TabIndex = 13;
             // 
+            // label8
+            // 
+            this.label8.AutoSize = true;
+            this.label8.Location = new System.Drawing.Point(12, 175);
+            this.label8.Name = "label8";
+            this.label8.Size = new System.Drawing.Size(45, 15);
+            this.label8.TabIndex = 16;
+            this.label8.Text = "Сумма";
+            // 
+            // editSum
+            // 
+            this.editSum.Location = new System.Drawing.Point(12, 193);
+            this.editSum.Name = "editSum";
+            this.editSum.Size = new System.Drawing.Size(231, 23);
+            this.editSum.TabIndex = 15;
+            // 
+            // label7
+            // 
+            this.label7.AutoSize = true;
+            this.label7.Location = new System.Drawing.Point(12, 121);
+            this.label7.Name = "label7";
+            this.label7.Size = new System.Drawing.Size(46, 15);
+            this.label7.TabIndex = 14;
+            this.label7.Text = "Кол-во";
+            // 
+            // editQuantity
+            // 
+            this.editQuantity.Location = new System.Drawing.Point(12, 139);
+            this.editQuantity.Name = "editQuantity";
+            this.editQuantity.Size = new System.Drawing.Size(231, 23);
+            this.editQuantity.TabIndex = 13;
+            // 
+            // editBooksId
+            // 
+            this.editBooksId.FormattingEnabled = true;
+            this.editBooksId.Location = new System.Drawing.Point(12, 86);
+            this.editBooksId.Name = "editBooksId";
+            this.editBooksId.Size = new System.Drawing.Size(231, 23);
+            this.editBooksId.TabIndex = 6;
+            // 
             // label3
             // 
             this.label3.AutoSize = true;
-            this.label3.Location = new System.Drawing.Point(12, 113);
+            this.label3.Location = new System.Drawing.Point(12, 68);
             this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(76, 15);
-            this.label3.TabIndex = 6;
-            this.label3.Text = "№ телефона";
+            this.label3.Size = new System.Drawing.Size(39, 15);
+            this.label3.TabIndex = 5;
+            this.label3.Text = "Книга";
             // 
-            // editTelephone
+            // editCustomerId
             // 
-            this.editTelephone.Location = new System.Drawing.Point(12, 131);
-            this.editTelephone.Name = "editTelephone";
-            this.editTelephone.Size = new System.Drawing.Size(231, 23);
-            this.editTelephone.TabIndex = 5;
+            this.editCustomerId.FormattingEnabled = true;
+            this.editCustomerId.Location = new System.Drawing.Point(12, 32);
+            this.editCustomerId.Name = "editCustomerId";
+            this.editCustomerId.Size = new System.Drawing.Size(231, 23);
+            this.editCustomerId.TabIndex = 4;
             // 
             // label2
             // 
             this.label2.AutoSize = true;
-            this.label2.Location = new System.Drawing.Point(13, 60);
+            this.label2.Location = new System.Drawing.Point(12, 14);
             this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(40, 15);
-            this.label2.TabIndex = 4;
-            this.label2.Text = "Адрес";
-            // 
-            // editAddress
-            // 
-            this.editAddress.Location = new System.Drawing.Point(13, 78);
-            this.editAddress.Name = "editAddress";
-            this.editAddress.Size = new System.Drawing.Size(231, 23);
-            this.editAddress.TabIndex = 3;
-            // 
-            // label1
-            // 
-            this.label1.AutoSize = true;
-            this.label1.Location = new System.Drawing.Point(12, 11);
-            this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(34, 15);
-            this.label1.TabIndex = 2;
-            this.label1.Text = "ФИО";
-            // 
-            // editFIO
-            // 
-            this.editFIO.Location = new System.Drawing.Point(12, 29);
-            this.editFIO.Name = "editFIO";
-            this.editFIO.Size = new System.Drawing.Size(231, 23);
-            this.editFIO.TabIndex = 0;
+            this.label2.Size = new System.Drawing.Size(72, 15);
+            this.label2.TabIndex = 3;
+            this.label2.Text = "Покупатель";
             // 
             // button1
             // 
-            this.button1.Location = new System.Drawing.Point(914, 34);
+            this.button1.Location = new System.Drawing.Point(920, 30);
             this.button1.Name = "button1";
             this.button1.Size = new System.Drawing.Size(96, 29);
             this.button1.TabIndex = 12;
             this.button1.Text = "Удалить";
             this.button1.UseVisualStyleBackColor = true;
             this.button1.Click += new System.EventHandler(this.button1_Click);
-            // 
-            // dataGridView1
-            // 
-            this.dataGridView1.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.dataGridView1.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
-            this.idCustomer,
-            this.fio,
-            this.address,
-            this.telephone});
-            this.dataGridView1.Location = new System.Drawing.Point(262, 69);
-            this.dataGridView1.Name = "dataGridView1";
-            this.dataGridView1.RowTemplate.Height = 25;
-            this.dataGridView1.Size = new System.Drawing.Size(849, 403);
-            this.dataGridView1.TabIndex = 10;
-            // 
-            // idCustomer
-            // 
-            this.idCustomer.HeaderText = "id";
-            this.idCustomer.Name = "idCustomer";
-            this.idCustomer.ReadOnly = true;
-            this.idCustomer.Visible = false;
-            // 
-            // fio
-            // 
-            this.fio.HeaderText = "ФИО";
-            this.fio.Name = "fio";
-            this.fio.ReadOnly = true;
-            // 
-            // address
-            // 
-            this.address.HeaderText = "Адрес";
-            this.address.Name = "address";
-            this.address.ReadOnly = true;
-            // 
-            // telephone
-            // 
-            this.telephone.HeaderText = "№ телефона";
-            this.telephone.Name = "telephone";
-            this.telephone.ReadOnly = true;
             // 
             // menuStrip1
             // 
@@ -198,7 +225,7 @@
             this.menuStrip1.Location = new System.Drawing.Point(0, 0);
             this.menuStrip1.Name = "menuStrip1";
             this.menuStrip1.Size = new System.Drawing.Size(1124, 24);
-            this.menuStrip1.TabIndex = 15;
+            this.menuStrip1.TabIndex = 16;
             this.menuStrip1.Text = "menuStrip1";
             // 
             // toolStripMenuItem1
@@ -213,9 +240,9 @@
             this.издателиToolStripMenuItem,
             this.разделToolStripMenuItem,
             this.авторыToolStripMenuItem,
+            this.покупателиToolStripMenuItem,
             this.поставщикиToolStripMenuItem,
-            this.книгиToolStripMenuItem,
-            this.заказыToolStripMenuItem});
+            this.книгиToolStripMenuItem});
             this.открытьToolStripMenuItem.Name = "открытьToolStripMenuItem";
             this.открытьToolStripMenuItem.Size = new System.Drawing.Size(87, 20);
             this.открытьToolStripMenuItem.Text = "База данных";
@@ -223,44 +250,44 @@
             // издателиToolStripMenuItem
             // 
             this.издателиToolStripMenuItem.Name = "издателиToolStripMenuItem";
-            this.издателиToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
+            this.издателиToolStripMenuItem.Size = new System.Drawing.Size(144, 22);
             this.издателиToolStripMenuItem.Text = "Издатели";
             this.издателиToolStripMenuItem.Click += new System.EventHandler(this.издателиToolStripMenuItem_Click);
             // 
             // разделToolStripMenuItem
             // 
             this.разделToolStripMenuItem.Name = "разделToolStripMenuItem";
-            this.разделToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
+            this.разделToolStripMenuItem.Size = new System.Drawing.Size(144, 22);
             this.разделToolStripMenuItem.Text = "Раздел";
             this.разделToolStripMenuItem.Click += new System.EventHandler(this.разделToolStripMenuItem_Click);
             // 
             // авторыToolStripMenuItem
             // 
             this.авторыToolStripMenuItem.Name = "авторыToolStripMenuItem";
-            this.авторыToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
+            this.авторыToolStripMenuItem.Size = new System.Drawing.Size(144, 22);
             this.авторыToolStripMenuItem.Text = "Авторы";
             this.авторыToolStripMenuItem.Click += new System.EventHandler(this.авторыToolStripMenuItem_Click);
+            // 
+            // покупателиToolStripMenuItem
+            // 
+            this.покупателиToolStripMenuItem.Name = "покупателиToolStripMenuItem";
+            this.покупателиToolStripMenuItem.Size = new System.Drawing.Size(144, 22);
+            this.покупателиToolStripMenuItem.Text = "Покупатели";
+            this.покупателиToolStripMenuItem.Click += new System.EventHandler(this.покупателиToolStripMenuItem_Click);
             // 
             // поставщикиToolStripMenuItem
             // 
             this.поставщикиToolStripMenuItem.Name = "поставщикиToolStripMenuItem";
-            this.поставщикиToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
+            this.поставщикиToolStripMenuItem.Size = new System.Drawing.Size(144, 22);
             this.поставщикиToolStripMenuItem.Text = "Поставщики";
             this.поставщикиToolStripMenuItem.Click += new System.EventHandler(this.поставщикиToolStripMenuItem_Click);
             // 
             // книгиToolStripMenuItem
             // 
             this.книгиToolStripMenuItem.Name = "книгиToolStripMenuItem";
-            this.книгиToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
+            this.книгиToolStripMenuItem.Size = new System.Drawing.Size(144, 22);
             this.книгиToolStripMenuItem.Text = "Книги";
             this.книгиToolStripMenuItem.Click += new System.EventHandler(this.книгиToolStripMenuItem_Click);
-            // 
-            // заказыToolStripMenuItem
-            // 
-            this.заказыToolStripMenuItem.Name = "заказыToolStripMenuItem";
-            this.заказыToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
-            this.заказыToolStripMenuItem.Text = "Заказы";
-            this.заказыToolStripMenuItem.Click += new System.EventHandler(this.заказыToolStripMenuItem_Click);
             // 
             // отчётыToolStripMenuItem
             // 
@@ -268,22 +295,22 @@
             this.отчётыToolStripMenuItem.Size = new System.Drawing.Size(51, 20);
             this.отчётыToolStripMenuItem.Text = "Отчёт";
             // 
-            // СustomerForm
+            // OrdersForm
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 15F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(1124, 486);
+            this.ClientSize = new System.Drawing.Size(1124, 479);
             this.Controls.Add(this.menuStrip1);
+            this.Controls.Add(this.dataGridView1);
             this.Controls.Add(this.button3);
             this.Controls.Add(this.button2);
             this.Controls.Add(this.panel1);
             this.Controls.Add(this.button1);
-            this.Controls.Add(this.dataGridView1);
-            this.Name = "СustomerForm";
-            this.Text = "Покупатели";
+            this.Name = "OrdersForm";
+            this.Text = "Заказы";
+            ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).EndInit();
             this.panel1.ResumeLayout(false);
             this.panel1.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).EndInit();
             this.menuStrip1.ResumeLayout(false);
             this.menuStrip1.PerformLayout();
             this.ResumeLayout(false);
@@ -293,30 +320,33 @@
 
         #endregion
 
+        private DataGridView dataGridView1;
         private Button button3;
         private Button button2;
         private Panel panel1;
+        private Label label8;
+        private TextBox editSum;
+        private Label label7;
+        private TextBox editQuantity;
+        private ComboBox editBooksId;
         private Label label3;
-        private TextBox editTelephone;
+        private ComboBox editCustomerId;
         private Label label2;
-        private TextBox editAddress;
-        private Label label1;
-        private TextBox editFIO;
         private Button button1;
-        private DataGridView dataGridView1;
+        private DataGridViewTextBoxColumn idOrders;
         private DataGridViewTextBoxColumn idCustomer;
-        private DataGridViewTextBoxColumn fio;
-        private DataGridViewTextBoxColumn address;
-        private DataGridViewTextBoxColumn telephone;
+        private DataGridViewTextBoxColumn idBooks;
+        private DataGridViewTextBoxColumn quantity;
+        private DataGridViewTextBoxColumn sum;
         private MenuStrip menuStrip1;
         private ToolStripMenuItem toolStripMenuItem1;
         private ToolStripMenuItem открытьToolStripMenuItem;
         private ToolStripMenuItem издателиToolStripMenuItem;
         private ToolStripMenuItem разделToolStripMenuItem;
         private ToolStripMenuItem авторыToolStripMenuItem;
+        private ToolStripMenuItem покупателиToolStripMenuItem;
         private ToolStripMenuItem поставщикиToolStripMenuItem;
         private ToolStripMenuItem книгиToolStripMenuItem;
-        private ToolStripMenuItem заказыToolStripMenuItem;
         private ToolStripMenuItem отчётыToolStripMenuItem;
     }
 }

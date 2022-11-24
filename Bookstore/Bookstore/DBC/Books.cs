@@ -36,4 +36,5 @@ public class Books
     public Author Author { get; set; }
     public Suppliers Suppliers { get; set; }
     public Publishers Publishers { get; set; }
+    public ICollection<Orders> Orders { get; set; }
 }

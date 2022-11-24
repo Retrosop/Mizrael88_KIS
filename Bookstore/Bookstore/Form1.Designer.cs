@@ -37,6 +37,8 @@
             this.покупателиToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.поставщикиToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.книгиToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.заказыToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.отчётыToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.menuStrip1.SuspendLayout();
             this.SuspendLayout();
             // 
@@ -44,7 +46,8 @@
             // 
             this.menuStrip1.Items.AddRange(new System.Windows.Forms.ToolStripItem[] {
             this.toolStripMenuItem1,
-            this.открытьToolStripMenuItem});
+            this.открытьToolStripMenuItem,
+            this.отчётыToolStripMenuItem});
             this.menuStrip1.Location = new System.Drawing.Point(0, 0);
             this.menuStrip1.Name = "menuStrip1";
             this.menuStrip1.Size = new System.Drawing.Size(800, 24);
@@ -54,7 +57,7 @@
             // toolStripMenuItem1
             // 
             this.toolStripMenuItem1.Name = "toolStripMenuItem1";
-            this.toolStripMenuItem1.Size = new System.Drawing.Size(44, 20);
+            this.toolStripMenuItem1.Size = new System.Drawing.Size(45, 20);
             this.toolStripMenuItem1.Text = "Вход";
             // 
             // открытьToolStripMenuItem
@@ -65,10 +68,11 @@
             this.авторыToolStripMenuItem,
             this.покупателиToolStripMenuItem,
             this.поставщикиToolStripMenuItem,
-            this.книгиToolStripMenuItem});
+            this.книгиToolStripMenuItem,
+            this.заказыToolStripMenuItem});
             this.открытьToolStripMenuItem.Name = "открытьToolStripMenuItem";
-            this.открытьToolStripMenuItem.Size = new System.Drawing.Size(66, 20);
-            this.открытьToolStripMenuItem.Text = "Открыть";
+            this.открытьToolStripMenuItem.Size = new System.Drawing.Size(87, 20);
+            this.открытьToolStripMenuItem.Text = "База данных";
             // 
             // издателиToolStripMenuItem
             // 
@@ -112,6 +116,19 @@
             this.книгиToolStripMenuItem.Text = "Книги";
             this.книгиToolStripMenuItem.Click += new System.EventHandler(this.книгиToolStripMenuItem_Click);
             // 
+            // заказыToolStripMenuItem
+            // 
+            this.заказыToolStripMenuItem.Name = "заказыToolStripMenuItem";
+            this.заказыToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
+            this.заказыToolStripMenuItem.Text = "Заказы";
+            this.заказыToolStripMenuItem.Click += new System.EventHandler(this.заказыToolStripMenuItem_Click);
+            // 
+            // отчётыToolStripMenuItem
+            // 
+            this.отчётыToolStripMenuItem.Name = "отчётыToolStripMenuItem";
+            this.отчётыToolStripMenuItem.Size = new System.Drawing.Size(51, 20);
+            this.отчётыToolStripMenuItem.Text = "Отчёт";
+            // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 15F);
@@ -120,7 +137,7 @@
             this.Controls.Add(this.menuStrip1);
             this.MainMenuStrip = this.menuStrip1;
             this.Name = "Form1";
-            this.Text = "Form1";
+            this.Text = "Главная";
             this.Load += new System.EventHandler(this.Form1_Load);
             this.menuStrip1.ResumeLayout(false);
             this.menuStrip1.PerformLayout();
@@ -140,5 +157,7 @@
         private ToolStripMenuItem покупателиToolStripMenuItem;
         private ToolStripMenuItem поставщикиToolStripMenuItem;
         private ToolStripMenuItem книгиToolStripMenuItem;
+        private ToolStripMenuItem заказыToolStripMenuItem;
+        private ToolStripMenuItem отчётыToolStripMenuItem;
     }
 }
