@@ -135,7 +135,7 @@
             // книгиToolStripMenuItem1
             // 
             this.книгиToolStripMenuItem1.Name = "книгиToolStripMenuItem1";
-            this.книгиToolStripMenuItem1.Size = new System.Drawing.Size(180, 22);
+            this.книгиToolStripMenuItem1.Size = new System.Drawing.Size(107, 22);
             this.книгиToolStripMenuItem1.Text = "Книги";
             this.книгиToolStripMenuItem1.Click += new System.EventHandler(this.книгиToolStripMenuItem1_Click);
             // 

@@ -1,21 +1,48 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
-<Report ScriptLanguage="CSharp" ReportInfo.Created="11/26/2022 09:43:19" ReportInfo.Modified="11/26/2022 09:45:20" ReportInfo.CreatorVersion="2022.3.15.0">
-	<Dictionary>
-		<BusinessObjectDataSource Name="BooksReport" ReferenceName="BooksReportRef" Enabled="true">
-			<Column Name="title" DataType="System.String"/>
-			<Column Name="SectionsId" DataType="System.String"/>
-			<Column Name="AuthorId" DataType="System.String"/>
-			<Column Name="SuppliersId" DataType="System.String"/>
-			<Column Name="PublishersId" DataType="System.String"/>
-			<Column Name="year" DataType="System.String"/>
-			<Column Name="quantity" DataType="System.String"/>
-			<Column Name="price" DataType="System.String"/>
-		</BusinessObjectDataSource>
-	</Dictionary>
+<Report ScriptLanguage="CSharp" ReportInfo.Created="11/26/2022 09:43:19" ReportInfo.Modified="11/26/2022 11:23:07" ReportInfo.CreatorVersion="2022.3.15.0">
+  <Dictionary>
+    <BusinessObjectDataSource Name="BooksReport" ReferenceName="BooksReportRef" DataType="System.Int32" Enabled="true">
+      <Column Name="title" DataType="System.String"/>
+      <Column Name="SectionsId" DataType="System.String"/>
+      <Column Name="AuthorId" DataType="System.String"/>
+      <Column Name="SuppliersId" DataType="System.String"/>
+      <Column Name="PublishersId" DataType="System.String"/>
+      <Column Name="year" DataType="System.String"/>
+      <Column Name="quantity" DataType="System.String"/>
+      <Column Name="price" DataType="System.String"/>
+    </BusinessObjectDataSource>
+    <Parameter Name="Parameter1" DataType="System.String"/>
+    <Parameter Name="Parameter2" DataType="System.String"/>
+  </Dictionary>
   <ReportPage Name="Page1" Watermark.Font="Arial, 60pt">
-    <ReportTitleBand Name="ReportTitle1" Width="718.2" Height="37.8"/>
-    <PageHeaderBand Name="PageHeader1" Top="41.8" Width="718.2" Height="28.35"/>
-    <DataBand Name="Data1" Top="74.15" Width="718.2" Height="75.6"/>
-    <PageFooterBand Name="PageFooter1" Top="153.75" Width="718.2" Height="18.9"/>
+    <ReportTitleBand Name="ReportTitle1" Width="718.2" Height="94.5">
+      <TextObject Name="Text1" Left="283.5" Width="132.3" Height="18.9" Text="Отчёт по книгам" Font="Arial, 10pt"/>
+      <TextObject Name="Text18" Left="9.45" Top="28.35" Width="689.85" Height="18.9" Text="[Parameter1]" Font="Arial, 10pt"/>
+      <TextObject Name="Text19" Left="9.45" Top="56.7" Width="689.85" Height="18.9" Text="[Parameter2]" Font="Arial, 10pt"/>
+      <TextObject Name="Text20" Left="595.35" Width="113.4" Height="18.9" Text="[Date]" Font="Arial, 10pt"/>
+    </ReportTitleBand>
+    <PageHeaderBand Name="PageHeader1" Top="98.5" Width="718.2" Height="28.35">
+      <TextObject Name="Text3" Left="9.45" Width="94.5" Height="18.9" Text="title" Font="Arial, 10pt"/>
+      <TextObject Name="Text5" Left="122.85" Width="56.7" Height="18.9" Text="SectionsId" Font="Arial, 10pt"/>
+      <TextObject Name="Text7" Left="198.45" Width="56.7" Height="18.9" Text="AuthorId" Font="Arial, 10pt"/>
+      <TextObject Name="Text11" Left="349.65" Width="56.7" Height="18.9" Text="PublishersId" Font="Arial, 10pt"/>
+      <TextObject Name="Text13" Left="425.25" Width="94.5" Height="18.9" Text="year" Font="Arial, 10pt"/>
+      <TextObject Name="Text9" Left="274.05" Width="56.7" Height="18.9" Text="SuppliersId" Font="Arial, 10pt"/>
+      <TextObject Name="Text15" Left="538.65" Width="66.15" Height="18.9" Text="quantity" Font="Arial, 10pt"/>
+      <TextObject Name="Text17" Left="623.7" Width="85.05" Height="18.9" Text="price" Font="Arial, 10pt"/>
+    </PageHeaderBand>
+    <DataBand Name="Data1" Top="130.85" Width="718.2" Height="37.8" DataSource="BooksReport">
+      <TextObject Name="Text2" Left="9.45" Top="9.45" Width="94.5" Height="18.9" Text="[BooksReport.title]" Font="Arial, 10pt"/>
+      <TextObject Name="Text4" Left="122.85" Top="9.45" Width="56.7" Height="18.9" Text="[BooksReport.SectionsId]" Font="Arial, 10pt"/>
+      <TextObject Name="Text6" Left="198.45" Top="9.45" Width="56.7" Height="18.9" Text="[BooksReport.AuthorId]" Font="Arial, 10pt"/>
+      <TextObject Name="Text8" Left="274.05" Top="9.45" Width="56.7" Height="18.9" Text="[BooksReport.SuppliersId]" Font="Arial, 10pt"/>
+      <TextObject Name="Text10" Left="349.65" Top="9.45" Width="56.7" Height="18.9" Text="[BooksReport.PublishersId]" Font="Arial, 10pt"/>
+      <TextObject Name="Text12" Left="425.25" Top="9.45" Width="94.5" Height="18.9" Text="[BooksReport.year]" Font="Arial, 10pt"/>
+      <TextObject Name="Text14" Left="538.65" Top="9.45" Width="66.15" Height="18.9" Text="[BooksReport.quantity]" Font="Arial, 10pt"/>
+      <TextObject Name="Text16" Left="623.7" Top="9.45" Width="85.05" Height="18.9" Text="[BooksReport.price]" Font="Arial, 10pt"/>
+    </DataBand>
+    <PageFooterBand Name="PageFooter1" Top="172.65" Width="718.2" Height="18.9">
+      <TextObject Name="Text21" Left="614.25" Width="94.5" Height="18.9" Text="[Page]" Font="Arial, 10pt"/>
+    </PageFooterBand>
   </ReportPage>
 </Report>
