@@ -1,4 +1,5 @@
 using Bookstore.DBC;
+using FastReport;
 using System.Windows.Forms;
 
 namespace Bookstore
@@ -57,6 +58,35 @@ namespace Bookstore
         {
             Form frm = new OrdersForm();
             frm.Show();
+        }
+
+        private void книгиToolStripMenuItem1_Click(object sender, EventArgs e)
+        {
+            using (var db = new DataContext())
+            {
+                var ReportBookslist = db.Books.ToList();
+
+                Report rep = new Report();
+
+                rep.SetParameterValue("Parameter1", "Выполнение отчёта");
+                rep.SetParameterValue("Parameter2", "Параметры это удобно");
+
+                rep.RegisterData(ReportBookslist, "BooksReport");
+
+                if (rep.Report.Prepare())
+                {
+                    FastReport.Export.PdfSimple.PDFSimpleExport pdfExport = new FastReport.Export.PdfSimple.PDFSimpleExport();
+                    pdfExport.ShowProgress = false;
+                    pdfExport.Subject = "Subject Report";
+                    pdfExport.Title = "Title";
+                    System.IO.MemoryStream ms = new System.IO.MemoryStream();
+                    rep.Report.Export(pdfExport, ms);
+                    rep.Dispose();
+                    ms.Position = 0;
+
+                    return File(ms, "application/pdf", "Report.pdf");
+                }
+            }
         }
     }
 }

@@ -1,16 +1,16 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <Report ScriptLanguage="CSharp" ReportInfo.Created="11/26/2022 09:43:19" ReportInfo.Modified="11/26/2022 09:45:20" ReportInfo.CreatorVersion="2022.3.15.0">
 	<Dictionary>
-		<BusinessObjectDataSourse Name="BooksReport" ReferenceName="BooksReportRef" DataType="null" Enabled="true">
-			<Column Name="Title" DataType="System.String"/>
-			<Column Name="Section" DataType="System.String"/>
-			<Column Name="Author" DataType="System.String"/>
-			<Column Name="Supplier" DataType="System.String"/>
-			<Column Name="Publisher" DataType="System.String"/>
-			<Column Name="Year" DataType="System.String"/>
-			<Column Name="Quantity" DataType="System.String"/>
-			<Column Name="Price" DataType="System.String"/>
-		</BusinessObjectDataSourse>
+		<BusinessObjectDataSource Name="BooksReport" ReferenceName="BooksReportRef" Enabled="true">
+			<Column Name="title" DataType="System.String"/>
+			<Column Name="SectionsId" DataType="System.String"/>
+			<Column Name="AuthorId" DataType="System.String"/>
+			<Column Name="SuppliersId" DataType="System.String"/>
+			<Column Name="PublishersId" DataType="System.String"/>
+			<Column Name="year" DataType="System.String"/>
+			<Column Name="quantity" DataType="System.String"/>
+			<Column Name="price" DataType="System.String"/>
+		</BusinessObjectDataSource>
 	</Dictionary>
   <ReportPage Name="Page1" Watermark.Font="Arial, 60pt">
     <ReportTitleBand Name="ReportTitle1" Width="718.2" Height="37.8"/>
