@@ -1,6 +1,8 @@
 using Bookstore.DBC;
 using FastReport;
 using System.Windows.Forms;
+using static System.Windows.Forms.VisualStyles.VisualStyleElement;
+using FastReport.Export.PdfSimple;
 
 namespace Bookstore
 {
@@ -66,14 +68,16 @@ namespace Bookstore
             {
                 var ReportBookslist = db.Books.ToList();
 
-                Report rep = new Report();
+                /*Report rep = new Report();
 
                 rep.SetParameterValue("Parameter1", "Выполнение отчёта");
                 rep.SetParameterValue("Parameter2", "Параметры");
 
                 rep.RegisterData(ReportBookslist, "BooksReport");
 
-                
+                rep.Prepare();
+                Export pdf = new Export();
+                rep.Export(pdf, "c:\\ExportedPDF.pdf");*/
             }
         }
     }

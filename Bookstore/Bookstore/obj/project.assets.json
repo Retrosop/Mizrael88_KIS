@@ -807,6 +807,18 @@
         "runtime": {
           "lib/netcoreapp2.1/_._": {}
         }
+      },
+      "Tecnigen.FastReport.OpenSource.Export.PdfSimple/1.0.1": {
+        "type": "package",
+        "dependencies": {
+          "FastReport.OpenSource": "2019.1.20"
+        },
+        "compile": {
+          "lib/netstandard2.0/Tecnigen.FastReport.OpenSource.Export.PdfSimple.dll": {}
+        },
+        "runtime": {
+          "lib/netstandard2.0/Tecnigen.FastReport.OpenSource.Export.PdfSimple.dll": {}
+        }
       }
     }
   },
@@ -1871,6 +1883,19 @@
         "useSharedDesignerContext.txt",
         "version.txt"
       ]
+    },
+    "Tecnigen.FastReport.OpenSource.Export.PdfSimple/1.0.1": {
+      "sha512": "GsBsubWFvZLcfD0Hbbvlh/e0jhpLg4VoS9YB0p7gYsl+2Gzunf1NCI8sjIpiJmw83U5ZazZg5DrpsOLUGTfubA==",
+      "type": "package",
+      "path": "tecnigen.fastreport.opensource.export.pdfsimple/1.0.1",
+      "files": [
+        ".nupkg.metadata",
+        ".signature.p7s",
+        "lib/net40/Tecnigen.FastReport.OpenSource.Export.PdfSimple.dll",
+        "lib/netstandard2.0/Tecnigen.FastReport.OpenSource.Export.PdfSimple.dll",
+        "tecnigen.fastreport.opensource.export.pdfsimple.1.0.1.nupkg.sha512",
+        "tecnigen.fastreport.opensource.export.pdfsimple.nuspec"
+      ]
     }
   },
   "projectFileDependencyGroups": {
@@ -1879,7 +1904,8 @@
       "FastReport.OpenSource.Export.PdfSimple >= 2022.3.15",
       "Microsoft.EntityFrameworkCore >= 6.0.10",
       "Microsoft.EntityFrameworkCore.Tools >= 6.0.10",
-      "Pomelo.EntityFrameworkCore.MySql >= 6.0.2"
+      "Pomelo.EntityFrameworkCore.MySql >= 6.0.2",
+      "Tecnigen.FastReport.OpenSource.Export.PdfSimple >= 1.0.1"
     ]
   },
   "packageFolders": {
@@ -1942,6 +1968,10 @@
           "Pomelo.EntityFrameworkCore.MySql": {
             "target": "Package",
             "version": "[6.0.2, )"
+          },
+          "Tecnigen.FastReport.OpenSource.Export.PdfSimple": {
+            "target": "Package",
+            "version": "[1.0.1, )"
           }
         },
         "imports": [

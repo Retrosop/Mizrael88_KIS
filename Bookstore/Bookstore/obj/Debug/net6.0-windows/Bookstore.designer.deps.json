@@ -41,6 +41,17 @@
           }
         }
       },
+      "FastReport.OpenSource.Export.PdfSimple/2022.3.15": {
+        "dependencies": {
+          "FastReport.OpenSource": "2022.3.15"
+        },
+        "runtime": {
+          "lib/netstandard2.0/FastReport.OpenSource.Export.PdfSimple.dll": {
+            "assemblyVersion": "2022.3.15.0",
+            "fileVersion": "2022.3.15.0"
+          }
+        }
+      },
       "Humanizer.Core/2.8.26": {
         "runtime": {
           "lib/netstandard2.0/Humanizer.dll": {
@@ -593,7 +604,18 @@
           }
         }
       },
-      "System.Threading.Tasks.Extensions/4.5.3": {}
+      "System.Threading.Tasks.Extensions/4.5.3": {},
+      "Tecnigen.FastReport.OpenSource.Export.PdfSimple/1.0.1": {
+        "dependencies": {
+          "FastReport.OpenSource": "2022.3.15"
+        },
+        "runtime": {
+          "lib/netstandard2.0/Tecnigen.FastReport.OpenSource.Export.PdfSimple.dll": {
+            "assemblyVersion": "1.0.1.0",
+            "fileVersion": "1.0.1.0"
+          }
+        }
+      }
     }
   },
   "libraries": {
@@ -610,6 +632,13 @@
       "sha512": "sha512-Ef94cNj717lv12uZWk6YwhpNXWhuez6Y9wv69+Zkeor6bSu2XoocxkCvUIrovXfXE2SOzyMAKZ+bSMmftXEMAg==",
       "path": "fastreport.opensource/2022.3.15",
       "hashPath": "fastreport.opensource.2022.3.15.nupkg.sha512"
+    },
+    "FastReport.OpenSource.Export.PdfSimple/2022.3.15": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-dZIab56NrVUgt2OdBUHdrceo5C5BDEa+NDF40ywDYFLrfdht0tz72NVtp/9mWi5P4ZqRpwPSFuCAizQKm4pcVg==",
+      "path": "fastreport.opensource.export.pdfsimple/2022.3.15",
+      "hashPath": "fastreport.opensource.export.pdfsimple.2022.3.15.nupkg.sha512"
     },
     "Humanizer.Core/2.8.26": {
       "type": "package",
@@ -869,6 +898,13 @@
       "sha512": "sha512-+MvhNtcvIbqmhANyKu91jQnvIRVSTiaOiFNfKWwXGHG48YAb4I/TyH8spsySiPYla7gKal5ZnF3teJqZAximyQ==",
       "path": "system.threading.tasks.extensions/4.5.3",
       "hashPath": "system.threading.tasks.extensions.4.5.3.nupkg.sha512"
+    },
+    "Tecnigen.FastReport.OpenSource.Export.PdfSimple/1.0.1": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-GsBsubWFvZLcfD0Hbbvlh/e0jhpLg4VoS9YB0p7gYsl+2Gzunf1NCI8sjIpiJmw83U5ZazZg5DrpsOLUGTfubA==",
+      "path": "tecnigen.fastreport.opensource.export.pdfsimple/1.0.1",
+      "hashPath": "tecnigen.fastreport.opensource.export.pdfsimple.1.0.1.nupkg.sha512"
     }
   }
 }
