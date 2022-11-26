@@ -69,23 +69,11 @@ namespace Bookstore
                 Report rep = new Report();
 
                 rep.SetParameterValue("Parameter1", "Выполнение отчёта");
-                rep.SetParameterValue("Parameter2", "Параметры это удобно");
+                rep.SetParameterValue("Parameter2", "Параметры");
 
                 rep.RegisterData(ReportBookslist, "BooksReport");
 
-                if (rep.Report.Prepare())
-                {
-                    FastReport.Export.PdfSimple.PDFSimpleExport pdfExport = new FastReport.Export.PdfSimple.PDFSimpleExport();
-                    pdfExport.ShowProgress = false;
-                    pdfExport.Subject = "Subject Report";
-                    pdfExport.Title = "Title";
-                    System.IO.MemoryStream ms = new System.IO.MemoryStream();
-                    rep.Report.Export(pdfExport, ms);
-                    rep.Dispose();
-                    ms.Position = 0;
-
-                    return File(ms, "application/pdf", "Report.pdf");
-                }
+                
             }
         }
     }
