@@ -1,0 +1,21 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Report ScriptLanguage="CSharp" ReportInfo.Created="11/26/2022 09:43:19" ReportInfo.Modified="11/26/2022 09:45:20" ReportInfo.CreatorVersion="2022.3.15.0">
+	<Dictionary>
+		<BusinessObjectDataSourse Name="BooksReport" ReferenceName="BooksReportRef" DataType="null" Enabled="true">
+			<Column Name="Title" DataType="System.String"/>
+			<Column Name="Section" DataType="System.String"/>
+			<Column Name="Author" DataType="System.String"/>
+			<Column Name="Supplier" DataType="System.String"/>
+			<Column Name="Publisher" DataType="System.String"/>
+			<Column Name="Year" DataType="System.String"/>
+			<Column Name="Quantity" DataType="System.String"/>
+			<Column Name="Price" DataType="System.String"/>
+		</BusinessObjectDataSourse>
+	</Dictionary>
+  <ReportPage Name="Page1" Watermark.Font="Arial, 60pt">
+    <ReportTitleBand Name="ReportTitle1" Width="718.2" Height="37.8"/>
+    <PageHeaderBand Name="PageHeader1" Top="41.8" Width="718.2" Height="28.35"/>
+    <DataBand Name="Data1" Top="74.15" Width="718.2" Height="75.6"/>
+    <PageFooterBand Name="PageFooter1" Top="153.75" Width="718.2" Height="18.9"/>
+  </ReportPage>
+</Report>
