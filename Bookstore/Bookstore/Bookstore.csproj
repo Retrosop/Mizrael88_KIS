@@ -9,6 +9,7 @@
   </PropertyGroup>
 
   <ItemGroup>
+    <PackageReference Include="Aspose.Words" Version="22.12.0" />
     <PackageReference Include="FastReport.OpenSource" Version="2022.3.15" />
     <PackageReference Include="FastReport.OpenSource.Export.PdfSimple" Version="2022.3.15" />
     <PackageReference Include="Microsoft.EntityFrameworkCore" Version="6.0.10" />
@@ -36,7 +37,8 @@
   </ItemGroup>
 
   <ItemGroup>
-    <Folder Include="Properties\DataSources\" />
+    <None Include="Properties\DataSources\MySqlConnector.Logging.IMySqlConnectorLogger.datasource" />
+    <None Include="Properties\DataSources\Pomelo.EntityFrameworkCore.MySql.Storage.Internal.IDefaultValueCompatibilityAware.datasource" />
   </ItemGroup>
 
 </Project>
