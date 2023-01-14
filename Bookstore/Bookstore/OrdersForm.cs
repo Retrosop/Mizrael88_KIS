@@ -1,5 +1,4 @@
 ﻿using Bookstore.DBC;
-using Microsoft.EntityFrameworkCore;
 using System;
 using System.Collections.Generic;
 using System.ComponentModel;
@@ -9,41 +8,30 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
-using static System.Windows.Forms.VisualStyles.VisualStyleElement;
-using TextBox = System.Windows.Forms.TextBox;
 
 namespace Bookstore
 {
-    public partial class BooksForm : Form
+    public partial class OrdersForm : Form
     {
-        public BooksForm()
+        public OrdersForm()
         {
             InitializeComponent();
             using (var db = new DataContext())
             {
-                var dlist = db.Books.ToList();
+                var dlist = db.Orders.ToList();
                 foreach (var s in dlist)
                 {
-                    dataGridView1.Rows.Add(s.idBooks, s.title, 
-                        s.SectionsId, s.AuthorId, s.SuppliersId, s.PublishersId,
-                            s.year, s.quantity, s.price);
+                    dataGridView1.Rows.Add(s.idOrders, s.CustomerId,
+                        s.BooksId, s.quantity, s.sum);
                 }
-                var dSectionslist = db.Sections.ToList();
-                editSectionsId.DataSource = dSectionslist;
-                editSectionsId.DisplayMember = "section";
-                editSectionsId.ValueMember = "idSections";
-                var dAuthorlist = db.Author.ToList();
-                editAuthorId.DataSource = dAuthorlist;
-                editAuthorId.DisplayMember = "surname";
-                editAuthorId.ValueMember = "idAuthor";
-                var dSupplierslist = db.Suppliers.ToList();
-                editSuppliersId.DataSource = dSupplierslist;
-                editSuppliersId.DisplayMember = "title";
-                editSuppliersId.ValueMember = "idSuppliers";
-                var dPublisherslist = db.Publishers.ToList();
-                editPublishersId.DataSource = dPublisherslist;
-                editPublishersId.DisplayMember = "title";
-                editPublishersId.ValueMember = "idPublisher";
+                var dCustomerlist = db.Сustomer.ToList();
+                editCustomerId.DataSource = dCustomerlist;
+                editCustomerId.DisplayMember = "fio";
+                editCustomerId.ValueMember = "idCustomer";
+                var dBookslist = db.Books.ToList();
+                editBooksId.DataSource = dBookslist;
+                editBooksId.DisplayMember = "title";
+                editBooksId.ValueMember = "idBooks";
             }
         }
 
@@ -62,13 +50,13 @@ namespace Bookstore
                     int a = dataGridView1.CurrentRow.Index;
                     int v = int.Parse(dataGridView1.CurrentRow.Cells[0].Value.ToString());
                     dataGridView1.Rows.Remove(dataGridView1.Rows[a]);
-                    var zapis = new Books
+                    var zapis = new Orders
                     {
-                        idBooks = v
+                        idOrders = v
                     };
 
-                    db.Books.Attach(zapis);
-                    db.Books.Remove(zapis);
+                    db.Orders.Attach(zapis);
+                    db.Orders.Remove(zapis);
 
                     db.SaveChanges();
                 }
@@ -79,44 +67,33 @@ namespace Bookstore
         {
             using (var db = new DataContext())
             {
-                if (editTitle.Text == "" || editYear.Text == "" || editQuantity.Text == "" || editPrice.Text == "")
+                if (editQuantity.Text == "" || editSum.Text == "")
                 {
                     MessageBox.Show("Заполнены не все поля!", "Ошибка!");
                 }
                 else
                 {
-                    var Title = editTitle.Text;
-                    int IdSection = int.Parse(editSectionsId.SelectedValue.ToString());
-                    int IdAuthor = int.Parse(editAuthorId.SelectedValue.ToString());
-                    int IdSuppliers = int.Parse(editSuppliersId.SelectedValue.ToString());
-                    int IdPublishers = int.Parse(editPublishersId.SelectedValue.ToString());
-                    int Year = int.Parse(editYear.Text);
+                    int IdCustomer = int.Parse(editCustomerId.SelectedValue.ToString());
+                    int IdBooks = int.Parse(editBooksId.SelectedValue.ToString());
                     int Quantity = int.Parse(editQuantity.Text);
-                    int Price = int.Parse(editPrice.Text);
-                    var zapis = new Books()
+                    int Sum = int.Parse(editSum.Text);
+                    var zapis = new Orders()
                     {
-                        title = Title,
-                        SectionsId = IdSection,
-                        AuthorId = IdAuthor,
-                        SuppliersId = IdSuppliers,
-                        PublishersId = IdPublishers,
-                        year = Year,
+                        CustomerId = IdCustomer,
+                        BooksId = IdBooks,
                         quantity = Quantity,
-                        price = Price
+                        sum = Sum
                     };
                     db.Add(zapis);
                     db.SaveChanges();
-                    editTitle.Clear();
-                    editYear.Clear();
                     editQuantity.Clear();
-                    editPrice.Clear();
+                    editSum.Clear();
                     dataGridView1.Rows.Clear();
-                    var dlist = db.Books.ToList();
+                    var dlist = db.Orders.ToList();
                     foreach (var s in dlist)
                     {
-                        dataGridView1.Rows.Add(s.idBooks, s.title,
-                            s.SectionsId, s.AuthorId, s.SuppliersId, s.PublishersId,
-                                s.year, s.quantity, s.price);
+                        dataGridView1.Rows.Add(s.idOrders, s.CustomerId,
+                        s.BooksId, s.quantity, s.sum);
                     }
                 }
             }
@@ -157,9 +134,9 @@ namespace Bookstore
             this.Close();
         }
 
-        private void заказыToolStripMenuItem_Click(object sender, EventArgs e)
+        private void книгиToolStripMenuItem_Click(object sender, EventArgs e)
         {
-            Form frm = new OrdersForm();
+            Form frm = new BooksForm();
             frm.Show();
             this.Close();
         }

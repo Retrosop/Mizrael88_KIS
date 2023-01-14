@@ -11,5 +11,5 @@ public class Publishers
     [Key]
     public int idPublisher { get; set; }
     public string? title { get; set; }
-    public List<Books> books { get; set; }
+    public ICollection<Books> Books { get; set; }
 }

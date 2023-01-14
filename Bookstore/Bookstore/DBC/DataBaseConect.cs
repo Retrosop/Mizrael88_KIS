@@ -20,6 +20,7 @@ public class DataContext : DbContext
     public DbSet<Сustomer> Сustomer { get; set; }
     public DbSet<Suppliers> Suppliers { get; set; }
     public DbSet<Books> Books { get; set; }
+    public DbSet<Orders> Orders { get; set; }
 
 
     protected override void OnConfiguring(DbContextOptionsBuilder optionBuilder)
