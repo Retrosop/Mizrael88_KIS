@@ -7,6 +7,8 @@ namespace RunGroopWebApp.Models;
 
 public class AppUser
 {
+    [Key]
+    public int id { get; set; }
     public int? Pace { get; set; }
     public int? Mileage { get; set; }
     public string? ProfileImageUrl { get; set; }
