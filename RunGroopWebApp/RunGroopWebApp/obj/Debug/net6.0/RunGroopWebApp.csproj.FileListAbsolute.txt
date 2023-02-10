@@ -91,3 +91,5 @@ C:\Users\User\Documents\GitHub\Mizrael88_KIS\RunGroopWebApp\RunGroopWebApp\obj\D
 C:\Users\User\Documents\GitHub\Mizrael88_KIS\RunGroopWebApp\RunGroopWebApp\obj\Debug\net6.0\RunGroopWebApp.genruntimeconfig.cache
 C:\Users\User\Documents\GitHub\Mizrael88_KIS\RunGroopWebApp\RunGroopWebApp\obj\Debug\net6.0\ref\RunGroopWebApp.dll
 C:\Users\User\Documents\GitHub\Mizrael88_KIS\RunGroopWebApp\RunGroopWebApp\obj\Debug\net6.0\scopedcss\Views\Shared\_Layout.cshtml.rz.scp.css
+C:\Users\User\Documents\GitHub\Mizrael88_KIS\RunGroopWebApp\RunGroopWebApp\bin\Debug\net6.0\CloudinaryDotNet.dll
+C:\Users\User\Documents\GitHub\Mizrael88_KIS\RunGroopWebApp\RunGroopWebApp\bin\Debug\net6.0\Newtonsoft.Json.dll
