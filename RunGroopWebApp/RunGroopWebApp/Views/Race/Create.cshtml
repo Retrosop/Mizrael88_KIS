@@ -1,0 +1,49 @@
+﻿@using RunGroopWebApp.Data.Enum
+@using RunGroopWebApp.ViewModels;
+@model CreateRaceViewModel
+@*
+    For more information on enabling MVC for empty projects, visit https://go.microsoft.com/fwlink/?LinkID=397860
+*@
+@{
+}
+
+<form method="post" asp-action="Create" enctype="multipart/form-data">
+    <div class="mb-3">
+        <label asp-for="Title" class="form-label">Заголовок</label>
+        <input asp-for="Title" class="form-control" placeholder="Заголовок">
+        <span asp-validation-for="Title" class="text-danger"></span>
+    </div>
+    <div class="mb-3">
+        <label asp-for="Description" class="form-label">Описание</label>
+        <input asp-for="Description" class="form-control" placeholder="Описание">
+        <span asp-validation-for="Description" class="text-danger"></span>
+    </div>
+    <div class="mb-3">
+        <label asp-for="RaceCategory">Race Category</label>
+        <select asp-for="RaceCategory" asp-items="@Html.GetEnumSelectList<RaceCategory>()" class="form-control">
+            <option>--Выберите--</option>
+        </select>
+        <span asp-validation-for="RaceCategory" class="text-danger"></span>
+    </div>
+    <div class="mb-3">
+        <label asp-for="Address.Street">Улица</label>
+        <input asp-for="Address.Street" class="form-control" placeholder="Улица">
+        <span asp-validation-for="Address.Street" class="text-danger"></span>
+    </div>
+    <div class="mb-3">
+        <label asp-for="Address.City">Город</label>
+        <input asp-for="Address.City" class="form-control" placeholder="Город">
+        <span asp-validation-for="Address.Street" class="text-danger"></span>
+    </div>
+    <div class="mb-3">
+        <label asp-for="Address.State">Штат</label>
+        <input asp-for="Address.State" class="form-control" placeholder="Штат">
+        <span asp-validation-for="Address.State" class="text-danger"></span>
+    </div>
+    <div class="mb-3">
+        <label asp-for="Image" class="form-label">Изображение</label>
+        <input asp-for="Image" type="file" class="form-control" placeholder="Изображение">
+        <span asp-validation-for="Image" class="text-danger"></span>
+    </div>
+    <button type="submit" class="btn btn-primary">Submit</button>
+</form>
