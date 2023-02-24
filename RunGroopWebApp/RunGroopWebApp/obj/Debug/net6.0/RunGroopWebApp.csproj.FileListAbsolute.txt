@@ -89,3 +89,8 @@ C:\Users\User\Documents\GitHub\Mizrael88_KIS\RunGroopWebApp\RunGroopWebApp\obj\D
 C:\Users\User\Documents\GitHub\Mizrael88_KIS\RunGroopWebApp\RunGroopWebApp\obj\Debug\net6.0\scopedcss\Views\Shared\_Layout.cshtml.rz.scp.css
 C:\Users\User\Documents\GitHub\Mizrael88_KIS\RunGroopWebApp\RunGroopWebApp\bin\Debug\net6.0\CloudinaryDotNet.dll
 C:\Users\User\Documents\GitHub\Mizrael88_KIS\RunGroopWebApp\RunGroopWebApp\bin\Debug\net6.0\Newtonsoft.Json.dll
+C:\Users\User\Documents\GitHub\Mizrael88_KIS\RunGroopWebApp\RunGroopWebApp\bin\Debug\net6.0\Microsoft.AspNetCore.Cryptography.Internal.dll
+C:\Users\User\Documents\GitHub\Mizrael88_KIS\RunGroopWebApp\RunGroopWebApp\bin\Debug\net6.0\Microsoft.AspNetCore.Cryptography.KeyDerivation.dll
+C:\Users\User\Documents\GitHub\Mizrael88_KIS\RunGroopWebApp\RunGroopWebApp\bin\Debug\net6.0\Microsoft.AspNetCore.Identity.EntityFrameworkCore.dll
+C:\Users\User\Documents\GitHub\Mizrael88_KIS\RunGroopWebApp\RunGroopWebApp\bin\Debug\net6.0\Microsoft.Extensions.Identity.Core.dll
+C:\Users\User\Documents\GitHub\Mizrael88_KIS\RunGroopWebApp\RunGroopWebApp\bin\Debug\net6.0\Microsoft.Extensions.Identity.Stores.dll
