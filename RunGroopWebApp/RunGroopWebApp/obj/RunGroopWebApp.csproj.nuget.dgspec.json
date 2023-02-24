@@ -44,10 +44,6 @@
               "target": "Package",
               "version": "[1.20.0, )"
             },
-            "Identity.EntityFrameworkCore": {
-              "target": "Package",
-              "version": "[1.2.7, )"
-            },
             "Microsoft.EntityFrameworkCore": {
               "target": "Package",
               "version": "[7.0.2, )"

@@ -31,16 +31,6 @@ public class ClubRepository : IClubRepository
         return await _context.Clubs.ToListAsync();
     }
 
-    public Task<List<City>> GetAllCitiesByState(string state)
-    {
-        throw new NotImplementedException();
-    }
-
-    public Task<List<State>> GetAllStates()
-    {
-        throw new NotImplementedException();
-    }
-
     public async Task<Club?> GetByIdAsync(int id)
     {
         return await _context.Clubs.Include(i => i.Address).FirstOrDefaultAsync(i => i.Id == id);

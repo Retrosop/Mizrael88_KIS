@@ -9,11 +9,7 @@ C:\Users\User\Documents\GitHub\Mizrael88_KIS\RunGroopWebApp\RunGroopWebApp\bin\D
 C:\Users\User\Documents\GitHub\Mizrael88_KIS\RunGroopWebApp\RunGroopWebApp\bin\Debug\net6.0\RunGroopWebApp.pdb
 C:\Users\User\Documents\GitHub\Mizrael88_KIS\RunGroopWebApp\RunGroopWebApp\bin\Debug\net6.0\Azure.Core.dll
 C:\Users\User\Documents\GitHub\Mizrael88_KIS\RunGroopWebApp\RunGroopWebApp\bin\Debug\net6.0\Azure.Identity.dll
-C:\Users\User\Documents\GitHub\Mizrael88_KIS\RunGroopWebApp\RunGroopWebApp\bin\Debug\net6.0\Core.Identity.dll
 C:\Users\User\Documents\GitHub\Mizrael88_KIS\RunGroopWebApp\RunGroopWebApp\bin\Debug\net6.0\Humanizer.dll
-C:\Users\User\Documents\GitHub\Mizrael88_KIS\RunGroopWebApp\RunGroopWebApp\bin\Debug\net6.0\Identity.Core.dll
-C:\Users\User\Documents\GitHub\Mizrael88_KIS\RunGroopWebApp\RunGroopWebApp\bin\Debug\net6.0\Identity.EntityFrameworkCore.dll
-C:\Users\User\Documents\GitHub\Mizrael88_KIS\RunGroopWebApp\RunGroopWebApp\bin\Debug\net6.0\Identity.Stores.dll
 C:\Users\User\Documents\GitHub\Mizrael88_KIS\RunGroopWebApp\RunGroopWebApp\bin\Debug\net6.0\Microsoft.Bcl.AsyncInterfaces.dll
 C:\Users\User\Documents\GitHub\Mizrael88_KIS\RunGroopWebApp\RunGroopWebApp\bin\Debug\net6.0\Microsoft.Data.SqlClient.dll
 C:\Users\User\Documents\GitHub\Mizrael88_KIS\RunGroopWebApp\RunGroopWebApp\bin\Debug\net6.0\Microsoft.EntityFrameworkCore.dll
